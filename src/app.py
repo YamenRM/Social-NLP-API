@@ -28,7 +28,7 @@ def emotion_endpoint(input: TextInput):
     return {"text": input.text, "emotion": emotion_analysis(input.text)}
 
 
-# Optional: unified endpoint
+# unified endpoint
 @app.post("/analyze")
 def full_analysis(input: TextInput):
     return {
